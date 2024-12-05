@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>Tesouro lendário</title>
+</head>
+
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="arqueólogo.jpeg" alt="">
+            <p>Você é um arqueólogo destemido em busca de um tesouro lendário. A sua jornada começa no Brasil, onde você
+                deve decidir seu primeiro destino. Onde você irá primeiro?</p>
+            <button class="btn-proximo" data-proximo="1">Rio de Janeiro: Escolha esta opção se você quer explorar a
+                Cidade Maravilhosa e descobrir os segredos do Pico da Tijuca.</button>
+            <button class="btn-proximo" data-proximo="2">Pernambuco: Escolha esta opção se você quer investigar as
+                igrejas históricas e as praias deslumbrantes.</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="rio-de-janeiro.jpeg" alt="">
+            <p>Você decidiu explorar o Rio de Janeiro.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico: Você decide enfrentar a
+                subida desafiadora até o topo do Pico da Tijuca, onde uma pista misteriosa pode estar
+                escondida.</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa: Você sente que o desafio é grande
+                demais e decide voltar para casa.</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="pernambuco.jpg" alt="">
+            <p>Você escolheu explorar Pernambuco.</p>
+            <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas: Você visita as antigas igrejas
+                de Olinda em busca de pistas sobre o tesouro.</button>
+            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas: Você decide explorar as praias
+                deslumbrantes e relaxar um pouco antes de continuar sua jornada.</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Você encontrou uma pista no topo do Pico da Tijuca. A pista sugere que o próximo destino é a selva
+                amazônica, onde mais segredos aguardam.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="voltando-pra-casa.jpeg" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você desistiu e voltou para casa. Fim da jornada.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Você descobriu algo nas igrejas antigas. As pistas das igrejas apontam para a selva amazônica como o
+                próximo local a ser explorado. </p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas.</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Você decidiu explorar as praias de Pernambuco.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e explorar as igrejas: Após relaxar nas praias, você
+                decide voltar para investigar as igrejas históricas.</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Você está na Amazônia, enfrentando os desafios da selva.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda: Você decide seguir o curso do rio
+                pela esquerda, em busca do tesouro.</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita: Você escolhe seguir pela direita,
+                onde a vegetação é mais densa.</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Você voltou para explorar as igrejas.</p>
+            <button class="btn-proximo" data-proximo="7">Voltar para igreja.</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Você escolheu seguir o rio à esquerda.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida: Após uma longa viagem pelo rio,
+                você encontra uma cidade perdida que pode conter o tesouro.</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você seguiu o rio à direita.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro rio: Você decide que talvez o
+                caminho pela esquerda fosse melhor.</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="cidade-perdida.jpeg" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
+            <p>Você encontrou a cidade perdida. Você explora as ruínas antigas e finalmente encontra o tesouro que tanto
+                procurava. Parabéns!</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Você decidiu retornar e tentar o outro rio.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida: Você volta pelo rio à esquerda e
+                encontra a cidade perdida.</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
